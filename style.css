@@ -83,6 +83,7 @@ body {
 
 #link {
   text-decoration: none;
+  color: var(--bg-button-color);
 }
 
 .right-side {
