@@ -5,6 +5,7 @@
 }
 
 :root {
+  font-size: 62.5%;
   --body-bg-color: #121214;
   --text-color: #E1E1E6;
   --title-color: #04D361;
@@ -17,6 +18,7 @@ html {
 }
 
 body {
+  font-size: 1.6rem;
   width: 100vw;
   height: 100vh;
   font-weight: 700;
@@ -28,20 +30,21 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  gap: 3rem;
+  padding-left: 3rem;
 }
 
 .left-side {
-  width: 50%;
-  padding-left: 30px;
+  width: calc(50% - 3rem);
   display: flex;
   flex-direction: column;
 }
 
 .left-side img {
-  width: 389px;
-  height: 94px;
-  margin-top: 50px;
-  margin-bottom: 92px;
+  width: 38.9rem;
+  height: 9.4rem;
+  margin-top: 5rem;
+  margin-bottom: 9.2rem;
 }
 
 .left-side h2 {
@@ -49,7 +52,7 @@ body {
 }
 
 .left-side h4 {
-  margin-block: 9px;
+  margin-block: 0.9rem;
   color: var(--text-color)
 }
 
@@ -58,27 +61,27 @@ body {
 }
 
 .left-side #contact {
-  margin-block: 50px;
+  margin-block: 5rem;
   color: var(--form-color);
 }
 
 #submit-form {
   display: flex;
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 #submit-form #email {
   border: none;
-  width: 650px;
-  height: 48px;
-  border-left: solid var(--title-color) 5px;
-  padding-left: 10px;
+  width: 100%;
+  height: 4.8rem;
+  border-left: solid var(--title-color) 0.5rem;
+  padding-left: 1rem;
 }
 
 #submit-form button {
   border: none;
   cursor: pointer;
-  height: 48px;
+  height: 4.8rem;
 }
 
 #link {
@@ -92,4 +95,53 @@ body {
 .right-side img {
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 1250px) {
+  .container {
+    overflow: auto;
+    flex-direction: column-reverse;
+    padding-left: 0;
+    height: max-content;
+    gap: 1rem;
+  }
+  .left-side {
+    width: 100%;
+    padding-inline: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .right-side {
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .left-side img {
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+  }
+  .left-side #contact {
+    margin-block: 3rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .left-side img {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) and (max-height: 750px) {
+  .right-side {
+    display: none;
+  }
+  .left-side {
+    margin-top: 5rem;
+    padding-inline: 2rem;
+  }
 }
