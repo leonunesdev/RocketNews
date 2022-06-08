@@ -20,6 +20,6 @@ Neste projeto foi desenvolvido uma página de captação de leads ou newsletter.
 Você pode visualizar o layout do projeto através <a href="https://www.figma.com/file/PFXRgE4AJYqT3QoEuAtgFH/DD-%2F-RocketNews-(Copy)">desse link</a>. É necessário ter conta no <a href="https://www.figma.com/files/recent?fuid=1102968563677691331">Figma</a> para acessá-lo.
 
 ## 📝 Licença
-Esse projeto está sob a licença MIT. Veja o arquivo <a href="></a>
+Esse projeto está sob a licença MIT. Veja o arquivo <a href="https://github.com/leonunesdev/RocketNews/blob/main/LICENSE">License</a> para mais detalhes
 
 Feito com 💜 by Leandro Nunes 👋
